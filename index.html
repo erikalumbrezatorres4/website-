@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE ERAS TOUR</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="about.html">About</a><about class="html"></about></li> <!-- Link to the "about.html" file -->
+            <li><a href="contact.html">Contact</a><contact class="html"></contact></li> <!-- Link to the "about.html" file -->
+            <li><a href="#" id="signin-button">Sign In</a></li>
+            <li><a href="music.html">Music</a><music class="html"></music></li> <!-- Link to the "music.html" page -->
+        </ul>
+    </nav>
+    
+    <!-- Parallax Section -->
+    <section id="home" class="parallax-section">
+        <div class="content">
+            <h1>Taylor Swift</h1>
+            <h2>The Eras</h2>
+        </div>
+    </section>
+    
+ <!-- Modal Section -->
+<div id="signin-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="close-modal">&times;</span>
+        <form id="signin-form">
+            <h2>Log In</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Sign In</button>
+
+            <!-- Add buttons for social login options -->
+            <div class="social-login-options">
+                <button id="facebook-login">Sign In with Facebook</button>
+                <button id="twitter-login">Sign In with Twitter</button>
+                <button id="gmail-login">Sign In with Gmail</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+   <!-- Carousel Section -->
+<!-- Carousel Section -->
+<section id="carousel" class="carousel-section">
+    <a href="https://www.taylorswift.com/" class="buy-now-button">Buy Now</a>
+    <div class="carousel-container">
+        <div class="carousel-slide"> 
+            <img src="tdavn.jpg" alt="Image 1">
+        </div>
+        <div class="carousel-slide">
+            <img src="thmdebam.jpg" alt="Image 2">
+        </div>
+        <div class="carousel-slide">
+            <img src="ttvdn.jpg" alt="Image 3">
+        </div>
+        <div class="carousel-slide">
+            <img src="ftbnse.jpg" alt="Image 4">
+        </div>
+        <div class="carousel-slide"> 
+            <img src="tdavn.jpg" alt="Image 1">
+        </div>
+        <div class="carousel-slide">
+            <img src="thmdebam.jpg" alt="Image 2">
+        </div>
+        <div class="carousel-slide">
+            <img src="ttvdn.jpg" alt="Image 3">
+        </div>
+        <div class="carousel-slide">
+            <img src="ftbnse.jpg" alt="Image 4">
+        </div>
+    </div>
+</section>
+    <script src="script.js"></script>
+
+    <!-- Scrollable Content Section -->
+<section id="scrollable-content" class="scrollable-section">
+    <div class="scrollable-container">
+        <!-- Add a video with autoplay, no controls, and full screen option -->
+        <div class="video-wrapper">
+            <video autoplay loop muted>
+                <source src="mdan.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <!-- Add your scrollable content here -->
+        <img src="dban2.jpg" alt="Image 1" width="1247" height="1800">
+    </div>
+</section>
+<section id="signup" class="signup-section">
+    <div class="signup-container">
+        <h2>Sign Up to Receive Updates</h2>
+        <form id="signup-form">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="location">Location:</label>
+            <select id="location" name="location">
+                <option value="New York">China</option>
+                <option value="Los Angeles">France</option>
+                <option value="Chicago">Japan</option>
+                <option value="Other">Philippines</option>
+            </select>
+            <h3>By providing this information, you are opting to receive emails from Taylor Nation with news, special offers, promotions and messages tailored to your interests, and you agree to the UMG/Taylor Nation privacy policy and terms of use.
+                Fields marked with an asterisk (*) are required. International customers will receive an email to confirm your subscription to above mailing list.</h3>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</section>
+
+    </div>
+</section>
+</body>
+</html>

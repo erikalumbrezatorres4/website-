@@ -1,0 +1,374 @@
+/* Styles for the navigation bar */
+/* Reset default list styles and remove underlines from links */
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px; /* Add spacing between buttons */
+}
+
+nav a {
+  text-decoration: none;
+  color: #333; /* Text color for the buttons */
+  font-weight: bold;
+  padding: 5px 10px;
+  border: 2px solid #333; /* Button border */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Style the "Sign In" button differently */
+#signin-button {
+  background-color: #333; /* Background color for the "Sign In" button */
+  color: #fff; /* Text color for the "Sign In" button */
+  border: 2px solid #333;
+}
+
+/* Hover effect for all buttons */
+nav a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Active (current) page styling */
+nav a:active {
+  background-color: #555;
+  color: #fff;
+}
+
+
+/* HOME ABOUT */
+/* Add this to your existing styles.css or create a new stylesheet */
+.home-button {
+  display: inline-block;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s;
+}
+
+.home-button:hover {
+  background-color: #333;
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Form Styles */
+#signin-form {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0078d4;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Social Login Buttons */
+.social-login-options {
+  margin-top: 20px;
+}
+
+.social-login-options button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #3b5998; /* Facebook */
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 5px 0;
+}
+
+.social-login-options button#twitter-login {
+  background-color: #1da1f2; /* Twitter */
+}
+
+.social-login-options button#gmail-login {
+  background-color: #db4a39; /* Gmail */
+}
+
+/* Hover effect for buttons */
+button:hover,
+.social-login-options button:hover {
+  background-color: #0057a4;
+}
+/* Carousel styles */
+.carousel-section {
+  text-align: center;
+  margin-top: 20px; /* Adjust the value to control the vertical position */
+}
+
+.carousel-container {
+  display: flex;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  width: 100%;
+  min-width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+  max-width: 100%; /* Set the maximum width to make images responsive */
+  height: auto; /* Maintain the aspect ratio */
+  font-family: 'Times New Roman', Times, serif; /* Set the desired font family */
+}
+
+
+/* CSS in styles.css */
+.logo-image {
+  width: 20px; /* Set the desired width */
+  height: 10; /* Maintain aspect ratio, adjusts height automatically */
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+
+.person-image {
+  width: 200px; /* Adjust the width as needed */
+  height: auto;
+  margin-right: 20px; /* Adjust the margin as needed */
+}
+
+.social-icon {
+  width: 32px; /* Adjust the width as needed */
+  height: 32px; /* Adjust the height as needed */
+  margin: 5px; /* Adjust the margin as needed */
+}
+#home {
+  background-image: url('your-background-image.jpg'); /* Replace with your image URL */
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Parallax Effect for the Background */
+#home::before {
+  content: "";
+  background-image: url('tay.jpg'); /* Replace with your image URL */
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  transform: translateZ(0);
+}
+.parallax-section {
+  background-image: url('tay.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000; /* Text color */
+}
+
+.content {
+  text-align: center;
+  transform: translateY(0);
+  transition: transform 0.4s ease-in-out;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+
+/* Small Social Media Icons */
+.small-icon {
+  width: 1cm; /* Adjust the width and height as needed for your desired small icon size */
+  height: 1cm;
+}
+li {
+  position: relative;
+}
+
+li a img {
+  width: 50px; /* Set the desired width */
+  height: 50px; /* Set the desired height */
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+li a img {
+  width: 50px; /* Set the desired width */
+  height: 50px; /* Set the desired height */
+}
+
+
+/* Buy Now button styles */
+.buy-now-button {
+  display: inline-block;
+  background-color: #333; /* Button background color */
+  color: #fff; /* Text color */
+  padding: 10px 20px; /* Padding around the text */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Remove underline on link */
+  font-weight: bold; /* Make the text bold */
+  transition: background-color 0.3s; /* Smooth color transition on hover */
+}
+
+.buy-now-button:hover {
+  background-color: #052342; /* Change background color on hover */
+}
+
+/*scroll*/
+/* Style the video wrapper to maintain aspect ratio and take up full width and height */
+.video-wrapper {
+  position: relative;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+  width: 100%;
+  overflow: hidden; /* Hide any video overflow */
+  position: relative;
+}
+
+/* Style the video element to fill the container */
+.video-wrapper video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+  z-index: -1; /* Move video below other content */
+}
+/* Style the signup section */
+.signup-section {
+  background-color: #f7f7f7;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the signup container */
+.signup-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Style the signup form */
+#signup-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+/* Style the labels and form controls */
+#signup-form label, #signup-form select, #signup-form input {
+  margin: 10px 0;
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Style the description text */
+#signup-form h3 {
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* Style the submit button */
+#signup-form button {
+  background-color: rgb(38, 105, 177);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#signup-form button:hover {
+  background-color: #333;
+}
+
+
